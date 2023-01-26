@@ -177,7 +177,7 @@ function clickComment() {
 }
 function clickShare(){
 	let link = "https://wieeedeviee.github.io/";
-	alert(	"Copy the website's GitHub link " + link 
+	alert(	"Copy the website's GitHub link: " + link 
 			+ " and share it with peers to provide them information about fake news.")
 }
 
