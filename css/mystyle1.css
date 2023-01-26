@@ -1,0 +1,281 @@
+/*=============THIS IS THE CSS FILE CREATED FOR THE 1ST QUARTER=================*/
+
+/* NOTES: 
+ >> W3Schools is used as reference in most advanced CSS integrated in this document. */
+/* FONTS IN CANVA LAYOUT
+	headline - Special Elite
+	content - Anonymous Pro
+	footer content italics - Canva Sans 
+	footer content - Rugrats Sans
+*/
+
+@font-face { font-family: Special Elite; src: url('../fonts/SpecialElite-Regular.ttf') }
+@font-face { font-family: Anonymous Pro; src: url('../fonts/AnonymousPro-Regular.ttf') }
+@font-face { font-family: Montserrat; src: url('../fonts/static/Montserrat-Regular.ttf') }
+
+@keyframes transition	{
+	from {opacity: 0;}
+	  to {opacity: 100%;}
+}
+@keyframes transitionOut	{
+	from {opacity: 100%;}
+	  to {opacity: 0%;}
+}
+@keyframes contentIn	{
+	0% {transform: translateX(-40px);}
+	100% {transform: translateX(0);}
+}
+
+:root	{
+	--black: #000000;
+	--dark_gray: #1c1c1c;
+	--white: #ffffff;
+	--red: #A80303;
+	--gray: #646464;
+	--dark_red: #800000;
+	--light_red: #D48282;
+	--darker_red: #650000;
+	--for_content_bg: rgba(168, 3, 3, 0.60);
+	--main_bg: rgba(41, 41, 41, 0.40);
+	--trans_white: rgba(255,255,255, 0.5)
+}
+
+/*General*/
+	body	{
+		background-color: var(--black);
+		color: var(--white);
+		position: absolute;
+		margin: 0;
+		overflow: auto;
+		font-family: "Anonymous Pro", serif;
+		
+		animation-name: transition;
+  		animation-duration: 3s;
+		animation-timing-function: ease-in;
+		
+
+	}
+
+	h1, h2, h3	{
+		transition: 0.3s;
+		
+	}
+	
+	h1 {
+		font-size: 60px;
+		font-family: "Special Elite", Courier, serif;
+		hyphens: none;
+
+	}
+	
+	
+	#home-header	{
+		margin: 0px 160px 50px 180px;
+		font-size: 20px;
+	
+	}
+	.container {
+		margin: 30px 200px; 
+		background: var(--main_bg);
+		padding: 20px;
+		font-size: 24px;
+		
+	}
+	
+	hr		{
+		border-width: 0;
+	}
+	
+	.hr1	{
+		height: 3px; 
+		color: var(--red); 
+		background-color: #bd0000; 
+		position: relative;
+		top: -10px;
+	}
+	
+	.hr2	{
+		border-width: 1px !important; 
+		border-color: var(--white); 
+		background-color: var(--white);
+		opacity: 32%;
+	}
+	
+	.hr3		{
+		height: 3px; 
+		border-color: var(--black); 
+		background-color: var(--black);
+		opacity: 40%;
+		width: 96%;
+		margin: auto;
+	}
+
+	.hr4		{
+		border-width: 0.5px; 
+		border-color: #D48282; 
+		background-color: #D48282; 
+		margin: 0 100px 0 10px;
+		position: relative;
+
+	}
+	
+	a {
+		color: var(--white);
+		text-decoration: none;
+	}
+	
+	a.special	{
+		font-weight: bold !important;
+		cursor: pointer;
+	}
+	a.special:active	{
+		opacity: 80% !important;
+	}
+	.logo {
+		float: right; 
+		width: 240px; 
+		height: 240px;
+		transition: 0.3s;
+	}
+	footer {
+		background-color: var(--red);
+		padding: 16px;
+		margin: 0 !important;
+		font-family: Montserrat, Arial, Helvetica, sans, serif;
+		font-size: 15px;
+		max-width: 100%;
+		position: relative;
+		top: 20px;
+		
+	}
+	
+	.favicon	{
+		float: right;
+		position: relative;
+	}
+	/*.favicon:hover	{
+		opacity: 100%;
+	}*/
+
+	.copyright {
+		color: #ffffff;
+		opacity: 50% !important;
+		font-size: 12px;
+	}
+	.clearfix {
+		overflow: auto;
+	}
+	
+	
+	/*scrollbar*/
+		::-webkit-scrollbar {
+			width: 24px;
+  		} 
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px var(--gray);
+			
+		}
+		::-webkit-scrollbar-thumb {
+			background: var(--dark_red); 
+			border-radius: 10px;
+			box-shadow: 0 0 5px var(--black);
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background: var(--darker_red); 
+		}
+		::-webkit-scrollbar-corner	{
+			background: var(--gray);
+		}
+		div::-webkit-scrollbar {
+			width: 12px;
+  		} 		
+		
+
+/*Homepage*/
+	/*#bgimg	{
+		background-image: url("images/bgcover_notfinal.png");
+		background-size:100%;
+		background-repeat: no-repeat;*/
+	.buttons{
+		margin: 40px;
+		text-align: center;
+		padding: 20px;
+		border: 2px solid var(--light_red);
+		background-color: var(--red);
+		font-size: 30px;
+		border-radius: 20px;
+		font-family: "Special Elite", Courier, serif;
+		transition: 0.3s;
+	}
+	
+	.buttons:hover	{
+		transform: scale(1.05);
+		transition: width 0.5s, height 0.5s, transform 0.5s;
+		transition-timing-function: ease;
+	}
+	
+	.buttons:active 	{
+		background-color: var(--dark_red);
+		
+	}
+	
+/*Content pages*/
+	#cont.container{
+		margin-top: 100px;
+		padding: 0 0 20px 0;
+	}
+		
+	#c1bgcover	{
+		background-image: url('../images/content1bg_notfinal.png');
+		background-repeat: no-repeat;
+		background-size: 900px;
+		background-attachment: fixed;
+		background-position: 30% 0%;
+	}
+	h2 {
+		font-size: 50px;
+		font-family: "Special Elite", serif;
+	}
+	
+	h3 {
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+	
+	.imgcap	{
+		text-align: center;
+		font-size: 14px;
+		font-style: italic;
+	}
+	
+	.references {
+		border: 3px dashed #D48282;
+		margin: 20px 30px 20px 50px;
+		font-size: 16px;
+		padding-left: 10px;
+		list-style-type: none;
+		clear: both;
+	}
+	
+	.references > p > span, li > span	{
+		font-style: italic;
+	}
+	
+
+	.navtext	{
+		vertical-align: middle; 
+		display: inline-block;
+		padding: 3px 20px 0 20px;
+	}
+
+	.navtext:hover	{
+		text-decoration: underline solid var(--white) 0.5px;
+		
+	}
+	.navtext:active	{
+		color: var(--gray) !important;
+		text-decoration: underline solid var(--gray) 0.5px;
+	}
+
+
+

@@ -1,0 +1,75 @@
+/*=============THIS IS THE CSS FILE CREATED FOR THE 2ND QUARTER ALTERNATIVE ASSESSMENT 2=================*/
+
+.c4txt	{
+	padding: 10px;
+	margin: 10px;
+}
+@keyframes c4anim{
+/*	0% {
+		background: url('../images/graphics_for_content4.png') no-repeat -46px -48px;
+		background-size: 480px 620px;
+		width: 90px;
+		height: 114px;
+	}
+	50% {
+		background: url('../images/graphics_for_content4.png') -191px -52px;
+		background-size: 480px 620px;
+		width: 97px;
+		height: 114px;
+	}
+	100% {
+		background: url('../images/graphics_for_content4.png') no-repeat -347px -52px;
+		background-size: 480px 620px;
+		width: 87px;
+		height: 125px;
+	}*/
+	from{background-position-x:-16px;}
+     to{background-position-x:-464px;}
+}
+
+#c4i1.c4img	{
+	animation: c4anim 0.9s steps(3) infinite;
+	/*max-width: 97px;
+	max-height: 125px;*/
+	float: left;
+	box-sizing: border-box;
+	background: url('../images/graphics_for_content4.png') no-repeat -16px -12px;
+	background-size: 480px 620px;
+	width: 145px;
+	height: 145px;
+	vertical-align: middle;
+}
+#c4i2.c4img	{
+	animation: c4anim 0.9s steps(3) alternate infinite;
+	float: right;
+	box-sizing: border-box;
+	background: url('../images/graphics_for_content4.png') no-repeat -16px -159px;
+	background-size: 480px 620px;
+	width: 145px;
+	height: 145px;
+	vertical-align: middle;
+}
+#c4i3.c4img	{
+	animation: c4anim 0.9s steps(3) alternate infinite;
+	float: left;
+	box-sizing: border-box;
+	background: url('../images/graphics_for_content4.png') no-repeat -16px -321px;
+	background-size: 480px 620px;
+	width: 145px;
+	height: 145px;
+	vertical-align: middle;
+}
+#c4i4.c4img	{
+	animation: c4anim 0.9s steps(3) alternate infinite;
+	float: right;
+	box-sizing: border-box;
+	background: url('../images/graphics_for_content4.png') no-repeat -16px -471px;
+	background-size: 480px 620px;
+	width: 145px;
+	height: 145px;
+	vertical-align: middle;
+}
+.c4txt > p {
+	vertical-align: middle;
+	margin-left: 20px;
+}
