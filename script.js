@@ -176,8 +176,8 @@ function clickComment() {
 	alert(text);
 }
 function clickShare(){
-	let link = "<TBA>";
-	alert(	"Copy our website's link " + link 
+	let link = "https://wieeedeviee.github.io/";
+	alert(	"Copy the website's GitHub link " + link 
 			+ " and share it with peers to provide them information about fake news.")
 }
 
